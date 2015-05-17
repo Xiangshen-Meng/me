@@ -394,10 +394,13 @@
 // Default navbar
 .navbar-default {
   background-color: @navbar-default-bg;
-  border-color: @navbar-default-border;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
 
   .navbar-brand {
     color: @navbar-default-brand-color;
+    width: 200px;
+
     &:hover,
     &:focus {
       color: @navbar-default-brand-hover-color;
@@ -410,8 +413,27 @@
   }
 
   .navbar-nav {
+    > li:first-child > a {
+
+      span {
+        @media (min-width: @grid-float-breakpoint) {
+          padding-left: 15px;
+          border-left: 1px solid #e1e6eb;
+        }
+      }
+    }
+
     > li > a {
       color: @navbar-default-link-color;
+      padding-left: 15px;
+      padding-right: 0;
+
+      span {
+        @media (min-width: @grid-float-breakpoint) {
+          padding-right: 15px;
+          border-right: 1px solid #e1e6eb;
+        }
+      }
 
       &:hover,
       &:focus {
