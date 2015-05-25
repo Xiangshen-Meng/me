@@ -20,22 +20,22 @@
                 </li>
             </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                @if (Auth::guest())
-                    <li>
-                        <a href="{{ url('/auth/login') }}">登录</a>
-                    </li>
-                @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::user()->name }} <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ url('/auth/logout') }}">退出登录</a></li>
-                        </ul>
-                    </li>
-                @endif
-            </ul>
+            {{--<ul class="nav navbar-nav navbar-right">--}}
+                {{--@if (Auth::guest())--}}
+                    {{--<li>--}}
+                        {{--<a href="{{ url('/auth/login') }}">登录</a>--}}
+                    {{--</li>--}}
+                {{--@else--}}
+                    {{--<li class="dropdown">--}}
+                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">--}}
+                            {{--{{ Auth::user()->name }} <i class="fa fa-caret-down"></i>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu" role="menu">--}}
+                            {{--<li><a href="{{ url('/auth/logout') }}">退出登录</a></li>--}}
+                        {{--</ul>--}}
+                    {{--</li>--}}
+                {{--@endif--}}
+            {{--</ul>--}}
         </div>
     </div>
 </nav>

@@ -1,5 +1,117 @@
-#topbar {
-  .text {
-    border-left: 1px solid #e1e6eb;
+#top-posts {
+
+  .post-list {
+    padding: 0;
+    margin: 0;
+
+    .post {
+      color: #000;
+      font-size: 14px;
+      line-height: 21px;
+      padding-left: 0;
+
+      &:hover {
+        color: @rixi-blue;
+      }
+
+      img {
+        max-width: 200px;
+      }
+    }
+
+    &.with-img {
+      .post {
+        .clearfix;
+        color: #333;
+        padding: 25px 0;
+        border-bottom: 1px solid @border-gray;
+        .img {
+          margin-top: 4px;
+          float: left;
+          width: 200px;
+          @media (max-width: @screen-xs-max) {
+            width: 120px;
+            margin-top: 0;
+          }
+          @media (max-width: @screen-xxs-max) {
+            width: 80px;
+          }
+        }
+        .content {
+          margin-left: 225px;
+          @media (max-width: @screen-xs-max) {
+            margin-left: 140px;
+          }
+          @media (max-width: @screen-xxs-max) {
+            margin-left: 100px;
+          }
+        }
+        .title {
+          display: block;
+          color: #000;
+          font-size: 20px;
+          line-height: 27px;
+          &:hover {
+            color: @rixi-blue;
+          }
+          @media (max-width: (@screen-sm-max)) {
+            font-size: 15px;
+          }
+          @media (max-width: (@screen-xxs-max)) {
+            font-size: 13px;
+            line-height: 18px;
+            min-height: 36px;
+          }
+        }
+        .meta {
+          display: inline-block;
+          margin-top: 10px;
+          margin-left: 16px;
+          font-size: 12px;
+          height: 16px;
+          line-height: 16px;
+          &:first-child {
+            margin-left: 0;
+          }
+          @media (max-width: @screen-xs-max) {
+            margin-top: 5px ;
+          }
+
+        }
+        .author {
+          color: #999;
+          margin-left: 0;
+          & > a{
+            color:@rixi-blue;
+            &:hover{
+              color:#0096ff;
+            }
+          }
+        }
+        .time {
+          color: #999;
+        }
+        .endorse {
+          color: #949ca8;
+          .fa {
+            font-size: 15px;
+          }
+        }
+        .summary {
+          color: @gray-blue;
+          margin-top: 10px;
+          font-size: 14px;
+          line-height: 1.6em;
+
+          @media (max-width: (@screen-md-max)) {
+            font-size: 13px;
+          }
+          @media (max-width: (@screen-sm-max)) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
 }
+

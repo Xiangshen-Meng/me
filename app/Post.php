@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model {
 
-    protected $fillable = ['title', 'description', 'image'];
+    protected $fillable = ['title', 'image', 'description', 'story'];
 
     /**
      * The creator of the Post.

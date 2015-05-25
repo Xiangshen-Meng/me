@@ -13,13 +13,14 @@ class CreateTeamsTable extends Migration
      */
     public function up()
     {
-        Schema::create('team', function (Blueprint $table) {
+        Schema::create('teams', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('slogan');
             $table->string('url');
-            $table->text('description');
             $table->string('image');
+            $table->text('description');
+            $table->text('story');
             $table->timestamps();
         });
     }
@@ -31,7 +32,7 @@ class CreateTeamsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('team');
+        Schema::drop('teams');
     }
 
 }

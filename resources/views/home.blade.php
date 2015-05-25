@@ -16,6 +16,9 @@
                                 <tr>
                                     <td><a href="{{ route('team.create') }}" class="btn btn-primary">新建Team</a></td>
                                 </tr>
+                                <tr>
+                                    <td><a href="{{ route('profile.create') }}" class="btn btn-primary">新建Profile</a></td>
+                                </tr>
                             </table>
                         </div>
                     </div>

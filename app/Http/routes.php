@@ -22,3 +22,4 @@ Route::controllers([
 
 Route::resource('post', 'PostController');
 Route::resource('team', 'TeamController');
+Route::resource('profile', 'ProfileController');
