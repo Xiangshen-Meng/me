@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -25,7 +26,8 @@ class PostController extends Controller {
 	 */
 	public function index()
 	{
-        return view('post.index');
+        $posts = Post::all();
+        return view('post.index', compact('posts'));
 	}
 
 	/**
