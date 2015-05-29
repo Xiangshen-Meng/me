@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', '关注在外奋斗的人与事')
+
 @section('content')
 
     @include('partials._topbar')

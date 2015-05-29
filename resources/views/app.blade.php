@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>日兮网</title>
+	<title>@yield('title')-日兮网</title>
+    <meta name="description" content="@yield('meta_desc', '日兮网，关注在外奋斗的你、我、他。')">
 
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 

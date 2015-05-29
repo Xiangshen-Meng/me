@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', $post->title)
+
 @section('content')
     @include('partials._topbar')
     <div id="body-main" class="container">
