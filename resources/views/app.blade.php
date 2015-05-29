@@ -18,6 +18,7 @@
 </head>
 <body>
 
+    @include('partials._tags')
 	@yield('content')
 
 	<!-- Scripts -->
